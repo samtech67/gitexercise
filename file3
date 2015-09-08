@@ -1,0 +1,7 @@
+#define service {
+use generic-service
+host_name mysite.com
+service_description API
+check_command check_http2!-u /2.0/API.svc
+}
+
